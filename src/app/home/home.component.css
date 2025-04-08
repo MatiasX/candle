@@ -1,0 +1,27 @@
+.home-banner {
+  position: relative;
+  text-align: center;
+}
+
+.home-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.highlight-products .card {
+  margin-bottom: 20px;
+}
+
+.highlight-products .card img {
+  height: 200px;
+  object-fit: cover;
+}

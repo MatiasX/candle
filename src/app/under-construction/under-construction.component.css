@@ -1,0 +1,43 @@
+.under-construction {
+    position: relative; /* Szükséges a háttér pozicionálásához */
+    min-height: 90vh; /* Biztosítja, hogy legalább a képernyő magasságát elfoglalja */
+    padding: 50px 0;
+    background-color: rgba(244, 244, 244, 0.8); /* Áttetsző háttérszín a szöveg olvashatóságához */
+  }
+  
+  .under-construction::before {
+    content: "";
+    position: fixed; /* Rögzíti a hátteret a képernyőhöz */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('error.gif'); /* A GIF elérési útja */
+    background-size: cover; /* Kitölti a teljes hátteret */
+    background-repeat: no-repeat; /* Ne ismétlődjön a GIF */
+    z-index: -1; /* A tartalom mögé helyezi a hátteret */
+  }
+  
+  .under-construction .container {
+    position: relative; /* Szükséges a szöveg elhelyezéséhez a háttér felett */
+    z-index: 1; /* A szöveg a háttér felett jelenjen meg */
+  }
+  
+  .under-construction h1 {
+    color: #ff6f61;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .under-construction p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Az eredeti kép stílus nem szükséges, mivel a GIF a háttérben lesz */
+  /* .under-construction img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  } */

@@ -1,0 +1,24 @@
+.about-container {
+    padding: 50px 0;
+}
+
+.about-container h1 {
+    margin-bottom: 30px;
+}
+
+.about-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-container ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.about-container ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
